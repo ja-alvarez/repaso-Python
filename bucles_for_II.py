@@ -39,3 +39,13 @@ def sum_total (lista):
     return sum
 print(sum_total([6, 3, -2]))
 
+# 4. Promedio : crea una función que toma una lista y devuelve el promedio de todos los valores.
+# Ejemplo: el promedio ([1,2,3,4]) debería devolver 2.5
+
+def promedio (lista):
+    avg = 0
+    for i in range(0, len(lista)):
+        avg += lista[i]
+    return avg/len(lista)
+print(promedio([1,2,3,4,5]))
+
