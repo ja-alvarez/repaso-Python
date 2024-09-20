@@ -78,3 +78,17 @@ print('Valor minimo:', minimo([5, 1, 2, -4]))
         return False
     return min(lista) """
 
+# 7. Máximo : crea una función que toma una lista y devuelve el valor máximo en la matriz. Si la lista está vacía, haga que la función devuelva False.
+# Ejemplo: máximo ([37,2,1, -9]) debería devolver 37
+# Ejemplo: máximo ([]) debería devolver False
+
+def maximo (lista):
+    if not lista: #len(lista)<1:
+        return False
+    maximo = lista[0]
+    for i in range (1, len(lista)):
+        if lista[i] > maximo:
+            maximo = lista[i]
+    return maximo
+
+print('Valor maximo:', maximo([5, 1, 2, -4, 12]))
