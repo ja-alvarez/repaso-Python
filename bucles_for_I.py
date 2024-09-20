@@ -25,3 +25,13 @@ print(count)
 # 5. imprime números positivos a partir de 2018, cuenta atrás por cuatro.
 for cuenta_regresiva in range (2018, 0, -4):
     print(cuenta_regresiva)
+
+# 6. establece tres variables: lowNum, highNum, mult. Comenzando en lowNum y pasando por highNum, imprima solo los enteros que son múltiplos de mult. Por ejemplo, si lowNum = 2, highNum = 9 y mult = 3, el bucle debe imprimir 3, 6, 9 
+lowNum=  2
+highNum = 9
+mult = 3
+
+for multiplos in range(lowNum, highNum+1):
+    if multiplos % mult == 0:
+        print(multiplos)
+
