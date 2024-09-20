@@ -21,3 +21,7 @@ count = 0
 for suma in range (1, 500000, 2):
     count += suma
 print(count)
+
+# 5. imprime números positivos a partir de 2018, cuenta atrás por cuatro.
+for cuenta_regresiva in range (2018, 0, -4):
+    print(cuenta_regresiva)
