@@ -49,3 +49,15 @@ def promedio (lista):
     return avg/len(lista)
 print(promedio([1,2,3,4,5]))
 
+# 5. Longitud : crea una función que toma una lista y devuelve la longitud de la lista.
+# Ejemplo: la longitud ([37,2,1, -9]) debería devolver 4
+# Ejemplo: longitud ([]) debería devolver 0
+
+def longitud (lista):
+    return len(lista)
+
+print('longitud', longitud([1, 2, 3]))
+
+# 6. Mínimo : crea una función que tome una lista de números y devuelva el valor mínimo en la lista. Si la lista está vacía, haga que la función devuelva False.
+# Ejemplo: mínimo ([37,2,1, -9]) debería devolver -9
+# Ejemplo: mínimo ([]) debería devolver False
