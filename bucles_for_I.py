@@ -15,3 +15,9 @@ for entero in range(1, 101):
         print('Coding')
     else:
         print(entero)
+
+# 4. suma enteros impares de 0 a 500,000 e imprime la suma final.
+count = 0
+for suma in range (1, 500000, 2):
+    count += suma
+print(count)
