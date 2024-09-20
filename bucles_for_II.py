@@ -28,3 +28,14 @@ def count_positives (lista):
 
 print(count_positives ([- 1,1,1,1]))
 
+# 3. Suma total : crea una función que toma una lista y devuelve la suma de todos los valores de la matriz.
+# Ejemplo: sum_total ([1,2,3,4]) debería devolver 10
+# Ejemplo: sum_total ([6,3, -2]) debería devolver 7
+
+def sum_total (lista):
+    sum = 0
+    for i in range(0, len(lista)):
+        sum += lista[i]
+    return sum
+print(sum_total([6, 3, -2]))
+
