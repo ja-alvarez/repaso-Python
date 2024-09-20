@@ -39,3 +39,15 @@ def values_greater_than_second(lista):
         return nueva_lista
 print(values_greater_than_second([5,2,3,2,1,4]))
 
+# 5. escribe una función que acepte dos enteros como parámetros: tamaño y valor. La función debe crear y devolver una lista cuya longitud es igual al tamaño dado y cuyos valores son todos los valores dados.
+# Ejemplo: length_and_value (4,7) debería devolver [7,7,7,7]
+# Ejemplo: length_and_value (6,2) debería devolver [2,2,2,2,2,2]
+
+def length_and_value(length, value):
+    return [value] * length
+"""     nueva_lista = []
+    for i in range(0,length):
+        nueva_lista.append(value)
+    return nueva_lista """
+
+print(length_and_value(4,7))
