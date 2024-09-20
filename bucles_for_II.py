@@ -61,3 +61,20 @@ print('longitud', longitud([1, 2, 3]))
 # 6. Mínimo : crea una función que tome una lista de números y devuelva el valor mínimo en la lista. Si la lista está vacía, haga que la función devuelva False.
 # Ejemplo: mínimo ([37,2,1, -9]) debería devolver -9
 # Ejemplo: mínimo ([]) debería devolver False
+
+def minimo (lista):
+    if not lista: #len(lista)<1:
+        return False
+    minimo = lista[0]
+    for i in range (1, len(lista)):
+        if lista[i] < minimo:
+            minimo = lista[i]
+    return minimo
+
+print('Valor minimo:', minimo([5, 1, 2, -4]))
+
+""" def minimo(lista):
+    if not lista:
+        return False
+    return min(lista) """
+
