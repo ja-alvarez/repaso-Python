@@ -137,4 +137,12 @@ def ultimo_analisis(lista):
         'longitud': longitud
     }
 
-print(ultimo_analisis([37,2,1, -9]))
+print(ultimo_analisis([37, 2, 1, -9]))
+
+# 9. Lista inversa : crea una función que tome una lista y la devuelva con los valores invertidos. Haz esto sin crear una segunda lista. (Se sabe que este desafío aparece durante las entrevistas técnicas básicas).
+# Ejemplo: reverse_list ([37,2,1, -9]) debería devolver [-9,1,2,37]
+
+def lista_inversa (lista):
+    lista.reverse()
+    return lista
+print(lista_inversa([37, 2, 1, -9]))
