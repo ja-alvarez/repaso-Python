@@ -92,3 +92,49 @@ def maximo (lista):
     return maximo
 
 print('Valor maximo:', maximo([5, 1, 2, -4, 12]))
+
+# 8. Análisis final : crea una función que tome una lista y devuelva un diccionario que tenga la suma total, promedio, mínimo, máximo y longitud de la lista.
+# Ejemplo: ultimate_analysis ([37,2,1, -9]) debería devolver {'totalTotal': 31, 'promedio': 7.75, 'mínimo': -9, 'máximo': 37, 'longitud': 4}
+
+def ultimate_analysis (lista):
+    if not lista:
+        return False
+    suma = 0
+    minimo = lista[0]
+    maximo = lista [0]
+    longitud = len(lista)
+    for i in range (len(lista)):
+        suma += lista[i]
+        if lista[i] > maximo:
+            maximo = lista[i]
+        if lista[i] < minimo:
+            minimo = lista[i]
+    promedio = suma / longitud
+    return {
+        'suma': suma,
+        'promedio': promedio,
+        'minimo': minimo,
+        'maximo': maximo,
+        'longitud': longitud
+    }
+
+print(ultimate_analysis([3, 4, 5, 1, 2]))
+
+def ultimo_analisis(lista):
+    if not lista:
+        return False
+    
+    suma = sum(lista)
+    promedio = sum(lista)/len(lista)
+    minimo = min(lista)
+    maximo = max(lista)
+    longitud = len(lista)
+    return {
+        'suma': suma,
+        'promedio': promedio,
+        'minimo': minimo,
+        'maximo': maximo,
+        'longitud': longitud
+    }
+
+print(ultimo_analisis([37,2,1, -9]))
