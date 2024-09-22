@@ -55,4 +55,22 @@ def iterateDictionary2(key_name, some_list):
 
 iterateDictionary2("first_name", students)
 
-print('############### 4 ################')
+### 4. Itera a través de un diccionario con valores de listas
+# Crea una función printInfo(some_dict)que, dado un diccionario cuyos valores son todas listas, imprima el nombre de cada clave junto con el tamaño de su lista, y luego imprima los valores asociados dentro de la lista de cada clave. Por ejemplo:
+
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+def printInfo(some_dict):
+    print(f"{len(some_dict['locations'])} LOCATIONS")
+    for locations in range (len(some_dict['locations'])):
+        print(some_dict['locations'][locations])
+    
+    print(f"\n{len(some_dict['instructors'])} INSTRUCTORS")
+    for instructors in range (len(some_dict['instructors'])):
+        print(some_dict['instructors'][instructors])
+
+printInfo(dojo)
+
