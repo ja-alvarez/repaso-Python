@@ -46,3 +46,13 @@ def iterateDictionary (lista):
 
 iterateDictionary(students)
 
+### 3. Obtén valores de una lista de diccionarios
+# Crea una función iterateDictionary2(key_name, some_list)que, dada una lista de diccionarios y un nombre de clave, la función imprima el valor almacenado en esa clave para cada diccionario. Por ejemplo, iterateDictionary2 ('first_name', students) debería generar:
+
+def iterateDictionary2(key_name, some_list):
+    for sts in range (len(some_list)):
+        print(f"{some_list[sts][key_name]}")
+
+iterateDictionary2("first_name", students)
+
+print('############### 4 ################')
