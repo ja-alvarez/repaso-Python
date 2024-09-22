@@ -74,3 +74,11 @@ def printInfo(some_dict):
 
 printInfo(dojo)
 
+""" def printInfo(some_dict):
+    for key, values in some_dict.items():
+        print(f"{len(values)} {key.upper()}")
+        for value in values:
+            print(value)
+        print()  # Salto de línea para separar secciones
+
+printInfo(dojo) """
